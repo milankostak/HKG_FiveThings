@@ -16,16 +16,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponents() {
-        Button buttonA3 = (Button) findViewById(R.id.btn);
-        buttonA3.setOnClickListener(new View.OnClickListener() {
+        Button btnBrazil = (Button) findViewById(R.id.btnBrazil);
+        btnBrazil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                doSomething();
+                showBrazil();
+            }
+        });
+        Button btnBurkina = (Button) findViewById(R.id.btnBurkinaFaso);
+        btnBurkina.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                showBurkinaFaso();
             }
         });
     }
 
-    private void doSomething() {
+    private void showBrazil() {
         Intent i = new Intent(getApplicationContext(), BrazilScreen.class);
+        startActivity(i);
+    }
+
+    private void showBurkinaFaso() {
+        Intent i = new Intent(getApplicationContext(), BurkinaFasoScreen.class);
         startActivity(i);
     }
 

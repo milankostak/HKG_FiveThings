@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cz.uhk.fivethings.BrazilScreen">
+    tools:context="cz.uhk.fivethings.BurkinaFasoScreen">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/sao_paulo" />
+        android:src="@drawable/burkina_faso" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="São Paulo is the largest city in Brazil?"
-            style="@style/SolutionText" />
+            android:text="Burkina Faso is home to three crocodile species?"
+            style="@style/SolutionText"/>
     </RelativeLayout>
 </RelativeLayout>

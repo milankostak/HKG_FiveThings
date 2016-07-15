@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".BrazilScreen"></activity>
+        <activity android:name=".BurkinaFasoScreen"></activity>
     </application>
 
 </manifest>
