@@ -16,17 +16,15 @@
         android:layout_height="match_parent">
 
         <TextView
+            style="@style/QuestionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:gravity="center"
-            android:text="Did you know that..."
-            android:textSize="40sp" />
+            android:text="Did you know that..." />
 
         <TextView
+            style="@style/SolutionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="São Paulo is the largest city in Brazil?"
-            style="@style/SolutionText" />
+            android:text="São Paulo is the largest city in Brazil?" />
     </RelativeLayout>
 </RelativeLayout>
