@@ -40,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 showKiribati();
             }
         });
+        Button btnVatican = (Button) findViewById(R.id.btnVatican);
+        btnVatican.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                showVatican();
+            }
+        });
     }
 
     private void showBrazil() {
@@ -59,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void showKiribati() {
         Intent i = new Intent(getApplicationContext(), KiribatiScreen.class);
+        startActivity(i);
+    }
+
+    private void showVatican() {
+        Intent i = new Intent(getApplicationContext(), VaticanScreen.class);
         startActivity(i);
     }
 
