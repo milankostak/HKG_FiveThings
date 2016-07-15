@@ -34,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 showNepal();
             }
         });
+        Button btnKiribati = (Button) findViewById(R.id.btnKiribati);
+        btnKiribati.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                showKiribati();
+            }
+        });
     }
 
     private void showBrazil() {
@@ -48,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void showNepal() {
         Intent i = new Intent(getApplicationContext(), NepalScreen.class);
+        startActivity(i);
+    }
+
+    private void showKiribati() {
+        Intent i = new Intent(getApplicationContext(), KiribatiScreen.class);
         startActivity(i);
     }
 
