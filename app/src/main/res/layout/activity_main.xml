@@ -20,5 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Funny thing about Burkina Faso" />
+    <Button
+        android:id="@+id/btnNepal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weird thing about Nepal" />
 
 </LinearLayout>

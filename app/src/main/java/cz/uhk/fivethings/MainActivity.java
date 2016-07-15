@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
                 showBurkinaFaso();
             }
         });
+        Button btnNepal = (Button) findViewById(R.id.btnNepal);
+        btnNepal.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                showNepal();
+            }
+        });
     }
 
     private void showBrazil() {
@@ -37,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void showBurkinaFaso() {
         Intent i = new Intent(getApplicationContext(), BurkinaFasoScreen.class);
+        startActivity(i);
+    }
+
+    private void showNepal() {
+        Intent i = new Intent(getApplicationContext(), NepalScreen.class);
         startActivity(i);
     }
 

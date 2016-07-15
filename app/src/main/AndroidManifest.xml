@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".BrazilScreen"></activity>
         <activity android:name=".BurkinaFasoScreen"></activity>
+        <activity android:name=".NepalScreen"></activity>
     </application>
 
 </manifest>
