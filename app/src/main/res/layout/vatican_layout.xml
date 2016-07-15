@@ -19,12 +19,12 @@
             style="@style/QuestionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Did you know that..." />
+            android:text="@string/question" />
 
         <TextView
             style="@style/SolutionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vatican with its 0.44 km2 is the smallest country in the world?" />
+            android:text="@string/thing_vatican" />
     </RelativeLayout>
 </RelativeLayout>

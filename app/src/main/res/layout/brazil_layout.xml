@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/sao_paulo" />
+        android:src="@drawable/brazil" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,12 +19,12 @@
             style="@style/QuestionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Did you know that..." />
+            android:text="@string/question" />
 
         <TextView
             style="@style/SolutionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="São Paulo is the largest city in Brazil?" />
+            android:text="@string/thing_brazil" />
     </RelativeLayout>
 </RelativeLayout>

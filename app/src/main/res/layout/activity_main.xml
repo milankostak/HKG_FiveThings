@@ -14,26 +14,26 @@
         android:id="@+id/btnBrazil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Interesting thing about Brazil" />
+        android:text="@string/button_brazil" />
     <Button
         android:id="@+id/btnBurkinaFaso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Funny thing about Burkina Faso" />
+        android:text="@string/button_burkina_faso" />
     <Button
         android:id="@+id/btnNepal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Weird thing about Nepal" />
+        android:text="@string/button_nepal" />
     <Button
         android:id="@+id/btnKiribati"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Time thing about Kiribati" />
+        android:text="@string/button_kiribati" />
     <Button
         android:id="@+id/btnVatican"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Small thing about Vatican" />
+        android:text="@string/button_vatican" />
 
 </LinearLayout>

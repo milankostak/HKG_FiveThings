@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">FiveThings</string>
+
+    <!-- Main page -->
+    <string name="button_brazil">Interesting thing about Brazil</string>
+    <string name="button_burkina_faso">Funny thing about Burkina Faso</string>
+    <string name="button_nepal">Weird thing about Nepal</string>
+    <string name="button_kiribati">Time thing about Kiribati</string>
+    <string name="button_vatican">Small thing about Vatican</string>
+
+    <!-- Other pages -->
+    <string name="question">Did you know that...</string>
+    <string name="thing_brazil">São Paulo is the largest city in Brazil?</string>
+    <string name="thing_burkina_faso">Burkina Faso is home to three crocodile species?</string>
+    <string name="thing_nepal">Nepali calendar is approximately 58 years ahead from the Gregorian calendar?</string>
+    <string name="thing_kiribati">Line islands in Kiribati have time zone UTC+14:00?</string>
+    <string name="thing_vatican">Vatican with its 0.44 km<small><sup>2</sup></small> is the smallest country in the world?</string>
 </resources>

@@ -19,12 +19,12 @@
             style="@style/QuestionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Did you know that..." />
+            android:text="@string/question" />
 
         <TextView
             style="@style/SolutionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Burkina Faso is home to three crocodile species?" />
+            android:text="@string/button_burkina_faso" />
     </RelativeLayout>
 </RelativeLayout>

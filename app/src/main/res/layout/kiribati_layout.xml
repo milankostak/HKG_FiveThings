@@ -19,12 +19,12 @@
             style="@style/QuestionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Did you know that..." />
+            android:text="@string/question" />
 
         <TextView
             style="@style/SolutionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Line islands in Kiribati have time zone UTC+14:00?" />
+            android:text="@string/thing_kiribati" />
     </RelativeLayout>
 </RelativeLayout>
