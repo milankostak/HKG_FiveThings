@@ -43,13 +43,14 @@ public class MainActivity extends AppCompatActivity {
         Button btnVatican = (Button) findViewById(R.id.btnVatican);
         btnVatican.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openActivity(VaticanScreen.class);
+                //openActivity(VaticanScreen.class);
+
             }
         });
         Button btnAnotherThings = (Button) findViewById(R.id.btnAnotherThigs);
         btnAnotherThings.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openActivity(TabTest.class);
+                openActivity(TabsThings.class);
             }
         });
     }

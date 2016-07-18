@@ -25,11 +25,21 @@ public class PageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_page_layout, container, false);
 
-        TextView txt = (TextView) rootView.findViewById(R.id.page_number_label);
-        int page = getArguments().getInt(ARG_PAGE_NUMBER, -1);
-        txt.setText(String.format("Page %d", page));
+        View rootView = null;
+
+        switch (getArguments().getInt(ARG_PAGE_NUMBER, -1)) {
+            case 1: rootView = inflater.inflate(R.layout.brazil_layout, container, false);
+                break;
+            case 2: rootView = inflater.inflate(R.layout.burkina_faso_layout, container, false);
+                break;
+            case 3: rootView = inflater.inflate(R.layout.nepal_layout, container, false);
+                break;
+            case 4: rootView = inflater.inflate(R.layout.kiribati_layout, container, false);
+                break;
+            case 5: rootView = inflater.inflate(R.layout.vatican_layout, container, false);
+                break;
+        }
 
         return rootView;
     }

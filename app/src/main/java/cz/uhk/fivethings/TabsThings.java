@@ -7,12 +7,12 @@ import android.support.v4.view.ViewPager;
 
 import cz.uhk.fivethings.tabs.TabsPagerAdapter;
 
-public class TabTest extends AppCompatActivity {
+public class TabsThings extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tabtest_layout);
+        setContentView(R.layout.tabs_layout);
         initTabs();
     }
 
@@ -24,6 +24,4 @@ public class TabTest extends AppCompatActivity {
         pager.setAdapter(adapter);
         tabs.setupWithViewPager(pager);
     }
-
-
 }

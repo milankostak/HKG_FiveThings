@@ -22,6 +22,13 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return "TAB " + (position + 1);
+        switch (position) {
+            case 0: return "Brazil";
+            case 1: return "Burkina Faso";
+            case 2: return "Nepal";
+            case 3: return "Kiribati";
+            case 4: return "Vatican";
+        }
+        return "Default";
     }
 }
