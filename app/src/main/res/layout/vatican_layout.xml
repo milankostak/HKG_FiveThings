@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cz.uhk.fivethings.VaticanScreen">
+    tools:context=".screens.VaticanScreen">
 
     <ImageView
         android:layout_width="match_parent"

@@ -15,11 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BrazilScreen" />
-        <activity android:name=".BurkinaFasoScreen" />
-        <activity android:name=".NepalScreen" />
-        <activity android:name=".KiribatiScreen" />
-        <activity android:name=".VaticanScreen" />
+        <activity android:name=".screens.BrazilScreen" />
+        <activity android:name=".screens.BurkinaFasoScreen" />
+        <activity android:name=".screens.NepalScreen" />
+        <activity android:name=".screens.KiribatiScreen" />
+        <activity android:name=".screens.VaticanScreen" />
         <activity android:name=".TabsThings" />
     </application>
 
