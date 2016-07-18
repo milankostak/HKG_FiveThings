@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
         initComponents();
     }
 
+    /**
+     * Initialization of buttons
+     */
     private void initComponents() {
         Button btnBrazil = (Button) findViewById(R.id.btnBrazil);
         btnBrazil.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Opens an activity with given parameter value as TABS_PARAMETER
+     * @param clazz Activity to open
+     * @param param value for parameter
+     */
     private void openActivity(Class clazz, int param) {
         Intent i = new Intent(getApplicationContext(), clazz);
         i.putExtra(TABS_PARAMETER, param);

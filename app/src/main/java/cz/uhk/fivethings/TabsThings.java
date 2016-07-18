@@ -19,6 +19,10 @@ public class TabsThings extends AppCompatActivity {
         initSelection(tabs);
     }
 
+    /**
+     * Open with given tab
+     * @param tabs tab-layout
+     */
     private void initSelection(TabLayout tabs) {
         Intent myIntent = getIntent();
         int val = myIntent.getIntExtra(TABS_PARAMETER, 0);
