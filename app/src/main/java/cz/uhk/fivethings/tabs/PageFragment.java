@@ -5,8 +5,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
 import cz.uhk.fivethings.R;
+import static cz.uhk.fivethings.common.TabsConstants.*;
 
 public class PageFragment extends Fragment {
     private static final String ARG_PAGE_NUMBER = "page_number";
@@ -29,15 +30,15 @@ public class PageFragment extends Fragment {
         View rootView = null;
 
         switch (getArguments().getInt(ARG_PAGE_NUMBER, -1)) {
-            case 1: rootView = inflater.inflate(R.layout.brazil_layout, container, false);
+            case BRAZIL_PAGE: rootView = inflater.inflate(R.layout.brazil_layout, container, false);
                 break;
-            case 2: rootView = inflater.inflate(R.layout.burkina_faso_layout, container, false);
+            case BURKINA_FASO_PAGE: rootView = inflater.inflate(R.layout.burkina_faso_layout, container, false);
                 break;
-            case 3: rootView = inflater.inflate(R.layout.nepal_layout, container, false);
+            case NEPAL_PAGE: rootView = inflater.inflate(R.layout.nepal_layout, container, false);
                 break;
-            case 4: rootView = inflater.inflate(R.layout.kiribati_layout, container, false);
+            case KIRIBATI_PAGE: rootView = inflater.inflate(R.layout.kiribati_layout, container, false);
                 break;
-            case 5: rootView = inflater.inflate(R.layout.vatican_layout, container, false);
+            case VATICAN_PAGE: rootView = inflater.inflate(R.layout.vatican_layout, container, false);
                 break;
         }
 

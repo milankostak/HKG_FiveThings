@@ -1,11 +1,13 @@
 package cz.uhk.fivethings;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v4.view.ViewPager;
 
 import cz.uhk.fivethings.tabs.TabsPagerAdapter;
+import static cz.uhk.fivethings.common.TabsConstants.*;
 
 public class TabsThings extends AppCompatActivity {
 
@@ -14,6 +16,10 @@ public class TabsThings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tabs_layout);
         initTabs();
+
+        Intent myIntent = getIntent();
+        int val = myIntent.getIntExtra(TABS_PARAMETER, 1);
+        int a = 5;
     }
 
     private void initTabs() {

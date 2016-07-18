@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import static cz.uhk.fivethings.common.TabsConstants.*;
+
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     public TabsPagerAdapter(FragmentManager fm) {
@@ -22,12 +24,12 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position) {
-            case 0: return "Brazil";
-            case 1: return "Burkina Faso";
-            case 2: return "Nepal";
-            case 3: return "Kiribati";
-            case 4: return "Vatican";
+        switch (position+1) {
+            case BRAZIL_PAGE: return "Brazil";
+            case BURKINA_FASO_PAGE: return "Burkina Faso";
+            case NEPAL_PAGE: return "Nepal";
+            case KIRIBATI_PAGE: return "Kiribati";
+            case VATICAN_PAGE: return "Vatican";
         }
         return "Default";
     }

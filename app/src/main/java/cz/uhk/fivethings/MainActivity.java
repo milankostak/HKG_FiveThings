@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import static cz.uhk.fivethings.common.TabsConstants.*;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -44,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         btnVatican.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //openActivity(VaticanScreen.class);
+                Intent i = new Intent(getApplicationContext(), TabsThings.class);
+                i.putExtra(TABS_PARAMETER, VATICAN_PAGE);
+                startActivity(i);
 
             }
         });
