@@ -19,57 +19,43 @@ public class MainActivity extends AppCompatActivity {
         Button btnBrazil = (Button) findViewById(R.id.btnBrazil);
         btnBrazil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                showBrazil();
+                openActivity(BrazilScreen.class);
             }
         });
         Button btnBurkina = (Button) findViewById(R.id.btnBurkinaFaso);
         btnBurkina.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                showBurkinaFaso();
+                openActivity(BurkinaFasoScreen.class);
             }
         });
         Button btnNepal = (Button) findViewById(R.id.btnNepal);
         btnNepal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                showNepal();
+                openActivity(NepalScreen.class);
             }
         });
         Button btnKiribati = (Button) findViewById(R.id.btnKiribati);
         btnKiribati.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                showKiribati();
+                openActivity(KiribatiScreen.class);
             }
         });
         Button btnVatican = (Button) findViewById(R.id.btnVatican);
         btnVatican.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                showVatican();
+                openActivity(VaticanScreen.class);
+            }
+        });
+        Button btnAnotherThings = (Button) findViewById(R.id.btnAnotherThigs);
+        btnAnotherThings.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                openActivity(TabTest.class);
             }
         });
     }
 
-    private void showBrazil() {
-        Intent i = new Intent(getApplicationContext(), BrazilScreen.class);
-        startActivity(i);
-    }
-
-    private void showBurkinaFaso() {
-        Intent i = new Intent(getApplicationContext(), BurkinaFasoScreen.class);
-        startActivity(i);
-    }
-
-    private void showNepal() {
-        Intent i = new Intent(getApplicationContext(), NepalScreen.class);
-        startActivity(i);
-    }
-
-    private void showKiribati() {
-        Intent i = new Intent(getApplicationContext(), KiribatiScreen.class);
-        startActivity(i);
-    }
-
-    private void showVatican() {
-        Intent i = new Intent(getApplicationContext(), VaticanScreen.class);
+    private void openActivity(Class clazz) {
+        Intent i = new Intent(getApplicationContext(), clazz);
         startActivity(i);
     }
 
