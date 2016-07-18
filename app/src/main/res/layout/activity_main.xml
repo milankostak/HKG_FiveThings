@@ -35,10 +35,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_vatican" />
-    <Button
-        android:id="@+id/btnAnotherThigs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show another five things" />
-
 </LinearLayout>

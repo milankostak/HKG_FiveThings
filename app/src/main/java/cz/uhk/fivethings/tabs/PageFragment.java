@@ -28,8 +28,9 @@ public class PageFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View rootView = null;
+        int pageNumber = getArguments().getInt(ARG_PAGE_NUMBER, -1);
 
-        switch (getArguments().getInt(ARG_PAGE_NUMBER, -1)) {
+        switch (pageNumber) {
             case BRAZIL_PAGE: rootView = inflater.inflate(R.layout.brazil_layout, container, false);
                 break;
             case BURKINA_FASO_PAGE: rootView = inflater.inflate(R.layout.burkina_faso_layout, container, false);

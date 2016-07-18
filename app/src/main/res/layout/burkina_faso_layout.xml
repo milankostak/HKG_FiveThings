@@ -25,6 +25,6 @@
             style="@style/SolutionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_burkina_faso" />
+            android:text="@string/thing_burkina_faso" />
     </RelativeLayout>
 </RelativeLayout>

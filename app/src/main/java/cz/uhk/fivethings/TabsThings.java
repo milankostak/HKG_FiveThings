@@ -15,19 +15,24 @@ public class TabsThings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tabs_layout);
-        initTabs();
-
-        Intent myIntent = getIntent();
-        int val = myIntent.getIntExtra(TABS_PARAMETER, 1);
-        int a = 5;
+        TabLayout tabs = initTabs();
+        initSelection(tabs);
     }
 
-    private void initTabs() {
+    private void initSelection(TabLayout tabs) {
+        Intent myIntent = getIntent();
+        int val = myIntent.getIntExtra(TABS_PARAMETER, 0);
+        TabLayout.Tab tab = tabs.getTabAt(val);
+        tab.select();
+    }
+
+    private TabLayout initTabs() {
         TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
         TabsPagerAdapter adapter = new TabsPagerAdapter(getSupportFragmentManager());
 
         pager.setAdapter(adapter);
         tabs.setupWithViewPager(pager);
+        return tabs;
     }
 }

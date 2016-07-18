@@ -14,7 +14,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return PageFragment.newInstance(position + 1);
+        return PageFragment.newInstance(position);
     }
 
     @Override
@@ -24,7 +24,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position+1) {
+        switch (position) {
             case BRAZIL_PAGE: return "Brazil";
             case BURKINA_FASO_PAGE: return "Burkina Faso";
             case NEPAL_PAGE: return "Nepal";

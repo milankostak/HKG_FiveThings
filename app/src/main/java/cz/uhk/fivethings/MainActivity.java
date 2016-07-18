@@ -21,43 +21,45 @@ public class MainActivity extends AppCompatActivity {
         Button btnBrazil = (Button) findViewById(R.id.btnBrazil);
         btnBrazil.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openActivity(BrazilScreen.class);
+                // openActivity(BrazilScreen.class);
+                openActivity(TabsThings.class, BRAZIL_PAGE);
             }
         });
         Button btnBurkina = (Button) findViewById(R.id.btnBurkinaFaso);
         btnBurkina.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openActivity(BurkinaFasoScreen.class);
+                // openActivity(BurkinaFasoScreen.class);
+                openActivity(TabsThings.class, BURKINA_FASO_PAGE);
             }
         });
         Button btnNepal = (Button) findViewById(R.id.btnNepal);
         btnNepal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openActivity(NepalScreen.class);
+                // openActivity(NepalScreen.class);
+                openActivity(TabsThings.class, NEPAL_PAGE);
             }
         });
         Button btnKiribati = (Button) findViewById(R.id.btnKiribati);
         btnKiribati.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                openActivity(KiribatiScreen.class);
+                // openActivity(KiribatiScreen.class);
+                openActivity(TabsThings.class, KIRIBATI_PAGE);
             }
         });
         Button btnVatican = (Button) findViewById(R.id.btnVatican);
         btnVatican.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //openActivity(VaticanScreen.class);
-                Intent i = new Intent(getApplicationContext(), TabsThings.class);
-                i.putExtra(TABS_PARAMETER, VATICAN_PAGE);
-                startActivity(i);
+                // openActivity(VaticanScreen.class);
+                openActivity(TabsThings.class, VATICAN_PAGE);
 
             }
         });
-        Button btnAnotherThings = (Button) findViewById(R.id.btnAnotherThigs);
-        btnAnotherThings.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                openActivity(TabsThings.class);
-            }
-        });
+    }
+
+    private void openActivity(Class clazz, int param) {
+        Intent i = new Intent(getApplicationContext(), clazz);
+        i.putExtra(TABS_PARAMETER, param);
+        startActivity(i);
     }
 
     private void openActivity(Class clazz) {
