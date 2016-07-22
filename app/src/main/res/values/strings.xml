@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FiveThings</string>
     <string name="title_main">Five Things App</string>
-    <string name="title_tabs">Five things about the world</string>
+    <string name="title_tabs">Five (+1) things about the world</string>
 
     <!-- Main page -->
     <string name="button_brazil">Interesting thing about Brazil</string>
