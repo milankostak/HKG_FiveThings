@@ -19,7 +19,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return 6;
     }
 
     @Override
@@ -30,6 +30,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
             case NEPAL_PAGE: return "Nepal";
             case KIRIBATI_PAGE: return "Kiribati";
             case VATICAN_PAGE: return "Vatican";
+            case TRINIDAD_PAGE: return "Trinidad and Tobago";
         }
         return "Default";
     }

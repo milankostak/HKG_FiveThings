@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="@string/title_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +21,8 @@
         <activity android:name=".screens.NepalScreen" />
         <activity android:name=".screens.KiribatiScreen" />
         <activity android:name=".screens.VaticanScreen" />
-        <activity android:name=".TabsThings" />
+        <activity android:name=".TabsThings"
+            android:label="@string/title_tabs"/>
     </application>
 
 </manifest>

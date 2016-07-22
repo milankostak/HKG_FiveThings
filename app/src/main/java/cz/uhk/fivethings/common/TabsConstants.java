@@ -8,6 +8,7 @@ public class TabsConstants {
     public static final int NEPAL_PAGE = 2;
     public static final int KIRIBATI_PAGE = 3;
     public static final int VATICAN_PAGE = 4;
+    public static final int TRINIDAD_PAGE = 5;
 
     public static final String TABS_PARAMETER = "tabs_parameter";
 }

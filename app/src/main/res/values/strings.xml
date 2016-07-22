@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">FiveThings</string>
+    <string name="title_main">Five Things App</string>
+    <string name="title_tabs">Five things about the world</string>
 
     <!-- Main page -->
     <string name="button_brazil">Interesting thing about Brazil</string>
@@ -15,4 +17,5 @@
     <string name="thing_nepal">Nepali calendar is approximately 58 years ahead from the Gregorian calendar?</string>
     <string name="thing_kiribati">Line islands in Kiribati have time zone UTC+14:00?</string>
     <string name="thing_vatican">Vatican with its 0.44 km<small><sup>2</sup></small> is the smallest country in the world?</string>
+    <string name="thing_trinidad">Trinidad and Tobago is home to the world’s largest natural deposit of asphalt?</string>
 </resources>

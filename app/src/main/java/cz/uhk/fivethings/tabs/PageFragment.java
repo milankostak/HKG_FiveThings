@@ -41,6 +41,8 @@ public class PageFragment extends Fragment {
                 break;
             case VATICAN_PAGE: rootView = inflater.inflate(R.layout.vatican_layout, container, false);
                 break;
+            case TRINIDAD_PAGE: rootView = inflater.inflate(R.layout.trinidad_layout, container, false);
+                break;
         }
 
         return rootView;
